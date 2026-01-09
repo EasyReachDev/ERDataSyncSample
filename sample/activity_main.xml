@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLE Foreground Service Control"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Button to start the service (triggers checkPermissionsAndStartService) -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start BLE Monitoring"
+        android:padding="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+
+    <!-- Button to stop the service (triggers stopBleService) -->
+<!--    <Button-->
+<!--        android:id="@+id/stopButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Stop BLE Monitoring"-->
+<!--        android:padding="16dp"-->
+<!--        android:backgroundTint="#F44336"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:textColor="@android:color/white" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="Starting the service will create a persistent notification and check required location permissions."
+        android:textSize="14sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp" />
+
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
