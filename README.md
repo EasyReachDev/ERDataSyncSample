@@ -118,7 +118,7 @@ Click Sync Now in the top right bar. You can now call the classes and methods fr
 
 	5. Bind Service: 
 
-		Copy ServiceConnection connectionERService 
+		Copy ServiceConnection as connectionERService to bind service sample Code in main Activity
 			
 
 # 3. Code Explanation
