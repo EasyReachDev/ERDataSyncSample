@@ -1,4 +1,4 @@
-package com.er.erdatasync;
+package com.er.sampleapp;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
@@ -26,7 +26,7 @@ import com.er.datasynclib.cnf.DataSyncLibConfig;
 import com.er.datasynclib.service.IServiceCallback;
 import com.er.datasynclib.util.NetworkStatus;
 import com.er.datasynclib.util.UserPermissionManager;
-import com.er.erdatasync.adapter.UpdateStatusAdapter;
+import com.er.sampleapp.adapter.UpdateStatusAdapter;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

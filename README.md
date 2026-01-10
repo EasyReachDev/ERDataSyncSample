@@ -105,6 +105,7 @@ Click Sync Now in the top right bar. You can now call the classes and methods fr
 	2. API Key: 
 
 		String apiKey = "DF322350352308HDKV958ddTRD456JDJDHEH99944444444"; 
+		Note : This is dummy Key will not work. Contact sales@easyreach.co.in to get key  
         String userName = "Mobile User Name";	
 	
 	3. Call Service: 	
@@ -119,8 +120,14 @@ Click Sync Now in the top right bar. You can now call the classes and methods fr
 	5. Bind Service: 
 
 		Copy ServiceConnection as connectionERService to bind service sample Code in main Activity
-			
+	
+	6. Library Add:
 
+		implementation(files("libs/er-datasync-lib.aar"))
+		implementation("com.squareup.retrofit2:retrofit:2.9.0")
+		implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+		implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+		implementation("com.google.code.gson:gson:2.10.1")
 # 3. Code Explanation
 ## Manifest Permissions
 
