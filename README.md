@@ -16,15 +16,15 @@ Below is the behaviour of this library
 # 2. How to integrate
 Simply clone the present repository and fallow the Below Process.
 
-1. AAR file Implimentaton
+## AAR file Implimentaton
 Once you have the datasynclib.aar file, follow these steps to import it into a new project:
 
-Step 1: Add the file
+### Step 1: Add the file
 Copy the datasynclib.aar file.
 
 In your new project, switch the project view to "Project" and paste the file into the app/libs folder (create the folder if it doesn't exist).
 
-Step 2: Configure build.gradle
+### Step 2: Configure build.gradle
 Open your app-level build.gradle file and add the dependency:
 
 Gradle
@@ -33,7 +33,8 @@ dependencies {
     // This tells Gradle to look into the libs folder for the specific file
     implementation files('libs/datasynclib.aar')
 }
-Step 3: Sync Project
+
+### Step 3. Sync Project
 Click Sync Now in the top right bar. You can now call the classes and methods from your library just like any other dependency.
 
 # 3. User Permission 
@@ -128,17 +129,7 @@ Click Sync Now in the top right bar. You can now call the classes and methods fr
 		implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 		implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 		implementation("com.google.code.gson:gson:2.10.1")
-# 3. Code Explanation
-## Manifest Permissions
+		implementation("com.google.android.gms:play-services-location:21.0.1")
 
-## `onCreate` implementation
-
-## One time permission in code
-
-## Background services
-
-## Notifications
-
-## Application User Interface
 
 
